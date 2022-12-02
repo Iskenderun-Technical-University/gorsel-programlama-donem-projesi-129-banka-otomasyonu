@@ -38,6 +38,19 @@ namespace bankaotomasyon
             textBox2.Text = textBox2.Text.ToUpper();
             textBox2.SelectionStart = textBox2.Text.Length;
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text==string.Empty || textBox2.Text == string.Empty || maskedTextBox1.Text == string.Empty || maskedTextBox2.Text == string.Empty || maskedTextBox3.Text == string.Empty) 
+            {
+                MessageBox.Show("Lütfen Formu Eksiksiz Doldurunuz!!!");
+            }
+            else
+            {
+
+            MessageBox.Show("-Kayıt Başarılı-");
+            this.Close();
+            }
+        }
     }
 }

@@ -21,5 +21,18 @@ namespace bankaotomasyon
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            hesapdetay frm = new hesapdetay();
+            frm.Show();
+            this.Close();
+        }
+
+        private void buttonsifreunuttum_Click(object sender, EventArgs e)
+        {
+            sifremiunuttum frm = new sifremiunuttum();
+            frm.Show();
+        }
     }
 }

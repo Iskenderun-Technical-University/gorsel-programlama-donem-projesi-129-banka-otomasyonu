@@ -10,26 +10,18 @@ using System.Windows.Forms;
 
 namespace bankaotomasyon
 {
-    public partial class giris : Form
+    public partial class sifremiunuttum : Form
     {
-        public giris()
+        public sifremiunuttum()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            uyegiris frm = new uyegiris();
-            frm.Show();
             
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            uyeol frm=new uyeol();
-            frm.Show();
-            
+            MessageBox.Show("Şifre Değiştirildi");
+            this.Close();
         }
     }
 }

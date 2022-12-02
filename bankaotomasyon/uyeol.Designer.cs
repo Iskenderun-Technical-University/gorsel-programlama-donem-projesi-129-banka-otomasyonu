@@ -86,7 +86,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(235, 31);
+            this.groupBox1.Location = new System.Drawing.Point(245, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(325, 435);
             this.groupBox1.TabIndex = 22;
@@ -125,6 +125,7 @@
             this.button1.TabIndex = 31;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // maskedTextBox2
             // 

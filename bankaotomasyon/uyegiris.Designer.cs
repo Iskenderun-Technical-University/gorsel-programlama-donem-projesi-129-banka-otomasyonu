@@ -33,12 +33,12 @@
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonsifreunuttum = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             // 
             this.maskedTextBoxtelefon.BackColor = System.Drawing.SystemColors.MenuBar;
             this.maskedTextBoxtelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBoxtelefon.Location = new System.Drawing.Point(259, 262);
+            this.maskedTextBoxtelefon.Location = new System.Drawing.Point(259, 259);
             this.maskedTextBoxtelefon.Mask = "00000000000";
             this.maskedTextBoxtelefon.Name = "maskedTextBoxtelefon";
             this.maskedTextBoxtelefon.Size = new System.Drawing.Size(243, 41);
@@ -58,7 +58,7 @@
             // 
             this.maskedTextBox1.BackColor = System.Drawing.SystemColors.MenuBar;
             this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(259, 316);
+            this.maskedTextBox1.Location = new System.Drawing.Point(259, 313);
             this.maskedTextBox1.Mask = "00000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(243, 41);
@@ -72,7 +72,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(198, 271);
+            this.label1.Location = new System.Drawing.Point(198, 268);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 29);
             this.label1.TabIndex = 2;
@@ -84,36 +84,22 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(178, 323);
+            this.label2.Location = new System.Drawing.Point(178, 320);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Şifre:";
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Crimson;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkLabel1.ForeColor = System.Drawing.Color.Cyan;
-            this.linkLabel1.LinkColor = System.Drawing.Color.DarkBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(508, 331);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(151, 20);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Şifremi Unuttum!\r\n";
-            // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(376, 368);
+            this.button1.Location = new System.Drawing.Point(376, 365);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 47);
             this.button1.TabIndex = 5;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -143,7 +129,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(317, 122);
+            this.pictureBox1.Location = new System.Drawing.Point(317, 119);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(123, 102);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -161,6 +147,21 @@
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
+            // buttonsifreunuttum
+            // 
+            this.buttonsifreunuttum.BackColor = System.Drawing.Color.Transparent;
+            this.buttonsifreunuttum.FlatAppearance.BorderSize = 0;
+            this.buttonsifreunuttum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonsifreunuttum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonsifreunuttum.ForeColor = System.Drawing.Color.Navy;
+            this.buttonsifreunuttum.Location = new System.Drawing.Point(511, 311);
+            this.buttonsifreunuttum.Name = "buttonsifreunuttum";
+            this.buttonsifreunuttum.Size = new System.Drawing.Size(168, 45);
+            this.buttonsifreunuttum.TabIndex = 11;
+            this.buttonsifreunuttum.Text = "Şifremi Unuttum!";
+            this.buttonsifreunuttum.UseVisualStyleBackColor = false;
+            this.buttonsifreunuttum.Click += new System.EventHandler(this.buttonsifreunuttum_Click);
+            // 
             // uyegiris
             // 
             this.AcceptButton = this.button1;
@@ -169,12 +170,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(753, 457);
+            this.Controls.Add(this.buttonsifreunuttum);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.maskedTextBox1);
@@ -198,12 +199,12 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button buttonsifreunuttum;
     }
 }
 

@@ -14,3 +14,6 @@ C:\Users\ucar2\Desktop\grslprogproje\bankaotomasyon\bankaotomasyon\obj\Debug\ban
 C:\Users\ucar2\Desktop\grslprogproje\bankaotomasyon\bankaotomasyon\obj\Debug\bankaotomasyon.uyeol.resources
 C:\Users\ucar2\Desktop\grslprogproje\bankaotomasyon\bankaotomasyon\obj\Debug\bankaotomasyon.paracek.resources
 C:\Users\ucar2\Desktop\grslprogproje\bankaotomasyon\bankaotomasyon\obj\Debug\bankaotomasyon.parayatır.resources
+C:\Users\ucar2\Desktop\grslprogproje\bankaotomasyon\bankaotomasyon\obj\Debug\bankaotomasyon.paratransfer.resources
+C:\Users\ucar2\Desktop\grslprogproje\bankaotomasyon\bankaotomasyon\obj\Debug\bankaotomasyon.paratransfer2.resources
+C:\Users\ucar2\Desktop\grslprogproje\bankaotomasyon\bankaotomasyon\obj\Debug\bankaotomasyon.sifremiunuttum.resources

@@ -58,11 +58,29 @@
     <Compile Include="paracek.Designer.cs">
       <DependentUpon>paracek.cs</DependentUpon>
     </Compile>
+    <Compile Include="paratransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paratransfer.Designer.cs">
+      <DependentUpon>paratransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paratransfer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paratransfer2.Designer.cs">
+      <DependentUpon>paratransfer2.cs</DependentUpon>
+    </Compile>
     <Compile Include="parayatır.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="parayatır.Designer.cs">
       <DependentUpon>parayatır.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifremiunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremiunuttum.Designer.cs">
+      <DependentUpon>sifremiunuttum.cs</DependentUpon>
     </Compile>
     <Compile Include="uyegiris.cs">
       <SubType>Form</SubType>
@@ -90,8 +108,17 @@
     <EmbeddedResource Include="paracek.resx">
       <DependentUpon>paracek.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="paratransfer.resx">
+      <DependentUpon>paratransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paratransfer2.resx">
+      <DependentUpon>paratransfer2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="parayatır.resx">
       <DependentUpon>parayatır.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifremiunuttum.resx">
+      <DependentUpon>sifremiunuttum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="uyegiris.resx">
       <DependentUpon>uyegiris.cs</DependentUpon>

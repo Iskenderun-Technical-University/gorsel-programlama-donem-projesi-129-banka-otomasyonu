@@ -16,7 +16,7 @@ namespace bankaotomasyon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new paracek());
+            Application.Run(new giris());
         }
     }
 }

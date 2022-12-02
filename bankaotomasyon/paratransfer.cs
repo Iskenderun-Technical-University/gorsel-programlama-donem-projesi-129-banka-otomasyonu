@@ -10,26 +10,20 @@ using System.Windows.Forms;
 
 namespace bankaotomasyon
 {
-    public partial class giris : Form
+    public partial class paratransfer : Form
     {
-        public giris()
+        public paratransfer()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            uyegiris frm = new uyegiris();
-            frm.Show();
-            
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            uyeol frm=new uyeol();
-            frm.Show();
+            paratransfer2 fr = new paratransfer2();
+            fr.Show();
+            Close();
             
         }
+        
     }
 }
