@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dovizkur));
             this.panel1 = new System.Windows.Forms.Panel();
             this.usdsat = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -79,9 +81,9 @@
             this.usdsat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.usdsat.Location = new System.Drawing.Point(251, 6);
             this.usdsat.Name = "usdsat";
-            this.usdsat.Size = new System.Drawing.Size(73, 29);
+            this.usdsat.Size = new System.Drawing.Size(49, 29);
             this.usdsat.TabIndex = 13;
-            this.usdsat.Text = "USD:";
+            this.usdsat.Text = "----";
             // 
             // usdal
             // 
@@ -91,9 +93,9 @@
             this.usdal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.usdal.Location = new System.Drawing.Point(58, 6);
             this.usdal.Name = "usdal";
-            this.usdal.Size = new System.Drawing.Size(73, 29);
+            this.usdal.Size = new System.Drawing.Size(49, 29);
             this.usdal.TabIndex = 12;
-            this.usdal.Text = "USD:";
+            this.usdal.Text = "----";
             // 
             // panel2
             // 
@@ -113,9 +115,9 @@
             this.eursat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.eursat.Location = new System.Drawing.Point(251, 5);
             this.eursat.Name = "eursat";
-            this.eursat.Size = new System.Drawing.Size(73, 29);
+            this.eursat.Size = new System.Drawing.Size(49, 29);
             this.eursat.TabIndex = 15;
-            this.eursat.Text = "USD:";
+            this.eursat.Text = "----";
             // 
             // eural
             // 
@@ -125,9 +127,10 @@
             this.eural.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.eural.Location = new System.Drawing.Point(58, 6);
             this.eural.Name = "eural";
-            this.eural.Size = new System.Drawing.Size(73, 29);
+            this.eural.Size = new System.Drawing.Size(49, 29);
             this.eural.TabIndex = 14;
-            this.eural.Text = "USD:";
+            this.eural.Text = "----";
+            this.eural.Click += new System.EventHandler(this.eural_Click);
             // 
             // panel3
             // 
@@ -147,9 +150,9 @@
             this.gbpsat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gbpsat.Location = new System.Drawing.Point(251, 5);
             this.gbpsat.Name = "gbpsat";
-            this.gbpsat.Size = new System.Drawing.Size(73, 29);
+            this.gbpsat.Size = new System.Drawing.Size(49, 29);
             this.gbpsat.TabIndex = 19;
-            this.gbpsat.Text = "USD:";
+            this.gbpsat.Text = "----";
             // 
             // gbpal
             // 
@@ -159,9 +162,9 @@
             this.gbpal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gbpal.Location = new System.Drawing.Point(58, 6);
             this.gbpal.Name = "gbpal";
-            this.gbpal.Size = new System.Drawing.Size(73, 29);
+            this.gbpal.Size = new System.Drawing.Size(49, 29);
             this.gbpal.TabIndex = 16;
-            this.gbpal.Text = "USD:";
+            this.gbpal.Text = "----";
             // 
             // panel4
             // 
@@ -181,9 +184,9 @@
             this.aznsat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.aznsat.Location = new System.Drawing.Point(251, 6);
             this.aznsat.Name = "aznsat";
-            this.aznsat.Size = new System.Drawing.Size(73, 29);
+            this.aznsat.Size = new System.Drawing.Size(49, 29);
             this.aznsat.TabIndex = 18;
-            this.aznsat.Text = "USD:";
+            this.aznsat.Text = "----";
             // 
             // aznal
             // 
@@ -193,9 +196,9 @@
             this.aznal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.aznal.Location = new System.Drawing.Point(58, 5);
             this.aznal.Name = "aznal";
-            this.aznal.Size = new System.Drawing.Size(73, 29);
+            this.aznal.Size = new System.Drawing.Size(49, 29);
             this.aznal.TabIndex = 17;
-            this.aznal.Text = "USD:";
+            this.aznal.Text = "----";
             // 
             // label1
             // 
@@ -309,6 +312,12 @@
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // dovizkur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -376,5 +385,6 @@
         private System.Windows.Forms.Label gbpal;
         private System.Windows.Forms.Label aznsat;
         private System.Windows.Forms.Label aznal;
+        private System.Windows.Forms.Timer timer1;
     }
 }

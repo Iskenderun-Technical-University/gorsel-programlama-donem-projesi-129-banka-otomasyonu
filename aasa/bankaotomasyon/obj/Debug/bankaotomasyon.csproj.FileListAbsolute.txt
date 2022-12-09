@@ -37,3 +37,23 @@ C:\Users\ucar2\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-mas
 C:\Users\ucar2\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\bankaotomasyon\obj\Debug\bankaotomasyon.csproj.CoreCompileInputs.cache
 C:\Users\ucar2\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\bankaotomasyon\obj\Debug\bankaotomasyon.exe
 C:\Users\ucar2\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\bankaotomasyon\obj\Debug\bankaotomasyon.pdb
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\bin\Debug\bankaotomasyon.exe.config
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\bin\Debug\bankaotomasyon.exe
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\bin\Debug\bankaotomasyon.pdb
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.csproj.AssemblyReference.cache
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.csproj.SuggestedBindingRedirects.cache
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.dovizkur.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.hesapdetay.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.paracek.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.paratransfer.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.paratransfer2.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.parayatır.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.sifremiunuttum.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.uyegiris.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.giris.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.Properties.Resources.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.uyeol.resources
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.csproj.GenerateResource.cache
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.csproj.CoreCompileInputs.cache
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.exe
+C:\Users\Musa Bellur\Desktop\gorsel-programlama-donem-projesi-129-banka-otomasyonu-master\aasa\bankaotomasyon\obj\Debug\bankaotomasyon.pdb
