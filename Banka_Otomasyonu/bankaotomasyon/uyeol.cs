@@ -45,20 +45,29 @@ namespace bankaotomasyon
             else
             {
 
-            MessageBox.Show("-Kayıt Başarılı-");
-            this.Close();
+                baglanti.Open();
+                SqlCommand kayit_ekle = new SqlCommand("insert into Kullanici (ad,soyad,telefon,tc,sifre) values (@p1,@p2,@p3,@p4,@p5)", baglanti);
+
+                kayit_ekle.Parameters.AddWithValue("@p1", textBox1.Text);
+                kayit_ekle.Parameters.AddWithValue("@p2", textBox2.Text);
+                kayit_ekle.Parameters.AddWithValue("@p3", maskedTextBox1.Text);
+                kayit_ekle.Parameters.AddWithValue("@p4", maskedTextBox2.Text);
+                kayit_ekle.Parameters.AddWithValue("@p5", maskedTextBox3.Text);
+
+                kayit_ekle.ExecuteNonQuery();
+                baglanti.Close();
+
+
+                MessageBox.Show("-Kayıt Başarılı-");
+                this.Close();
             }
 
-            baglanti.Open();
-            SqlCommand kayit_ekle = new SqlCommand("insert into Kullanici (Ad_Soyad,Tel_no,TC_Kimlik_No,Sifre) values (@p1,@p2,@p3,@p4)", baglanti);
 
-            kayit_ekle.Parameters.AddWithValue("@p1", textBox1.Text);
-            kayit_ekle.Parameters.AddWithValue("@p2", maskedTextBox1.Text);
-            kayit_ekle.Parameters.AddWithValue("@p3", maskedTextBox2.Text);
-            kayit_ekle.Parameters.AddWithValue("@p4", maskedTextBox3.Text);
 
-            kayit_ekle.ExecuteNonQuery();
-            baglanti.Close();
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
 
         }
     }
