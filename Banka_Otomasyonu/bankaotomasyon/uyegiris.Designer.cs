@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uyegiris));
-            this.maskedTextBoxtelefon = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxtc = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,16 +43,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // maskedTextBoxtelefon
+            // maskedTextBoxtc
             // 
-            this.maskedTextBoxtelefon.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.maskedTextBoxtelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBoxtelefon.Location = new System.Drawing.Point(259, 259);
-            this.maskedTextBoxtelefon.Mask = "00000000000";
-            this.maskedTextBoxtelefon.Name = "maskedTextBoxtelefon";
-            this.maskedTextBoxtelefon.Size = new System.Drawing.Size(243, 41);
-            this.maskedTextBoxtelefon.TabIndex = 0;
-            this.maskedTextBoxtelefon.ValidatingType = typeof(int);
+            this.maskedTextBoxtc.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.maskedTextBoxtc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBoxtc.Location = new System.Drawing.Point(259, 259);
+            this.maskedTextBoxtc.Mask = "00000000000";
+            this.maskedTextBoxtc.Name = "maskedTextBoxtc";
+            this.maskedTextBoxtc.Size = new System.Drawing.Size(243, 41);
+            this.maskedTextBoxtc.TabIndex = 0;
+            this.maskedTextBoxtc.ValidatingType = typeof(int);
             // 
             // maskedTextBox1
             // 
@@ -179,7 +179,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.maskedTextBoxtelefon);
+            this.Controls.Add(this.maskedTextBoxtc);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -195,7 +195,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MaskedTextBox maskedTextBoxtelefon;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxtc;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

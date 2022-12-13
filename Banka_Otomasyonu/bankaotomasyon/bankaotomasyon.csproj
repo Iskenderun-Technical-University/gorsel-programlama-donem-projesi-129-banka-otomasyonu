@@ -93,6 +93,7 @@
     <Compile Include="sifremiunuttum.Designer.cs">
       <DependentUpon>sifremiunuttum.cs</DependentUpon>
     </Compile>
+    <Compile Include="sqlbaglanti.cs" />
     <Compile Include="uyegiris.cs">
       <SubType>Form</SubType>
     </Compile>

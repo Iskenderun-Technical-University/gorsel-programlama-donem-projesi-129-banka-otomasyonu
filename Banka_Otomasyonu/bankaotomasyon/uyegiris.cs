@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace bankaotomasyon
 {
@@ -22,11 +23,26 @@ namespace bankaotomasyon
 
         }
 
+        sqlbaglanti bgl = new sqlbaglanti();
+
         private void button1_Click(object sender, EventArgs e)
         {
-            hesapdetay frm = new hesapdetay();
-            frm.Show();
-            this.Close();
+            SqlCommand komut = new SqlCommand("select * from kullanici where tc = @p1 and sifre = @p2",bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", maskedTextBoxtc.Text);
+            komut.Parameters.AddWithValue("@p2", maskedTextBox1.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            if (dr.Read())
+            {
+                hesapdetay frm = new hesapdetay();
+                frm.tc = maskedTextBoxtc.Text;
+                frm.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Hatalı TC veya Şifre!!!");
+            }
+            bgl.baglanti().Close();
         }
 
         private void buttonsifreunuttum_Click(object sender, EventArgs e)

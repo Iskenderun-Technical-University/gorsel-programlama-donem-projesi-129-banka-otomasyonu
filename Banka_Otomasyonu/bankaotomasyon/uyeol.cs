@@ -31,10 +31,11 @@ namespace bankaotomasyon
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            textBox1.Text = textBox1.Text.ToUpper();
             textBox1.SelectionStart = textBox1.Text.Length;
         }
         
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-QE6J6UN\\SQLEXPRESS;Initial Catalog=Banka;Integrated Security=True");
+        sqlbaglanti bgl = new sqlbaglanti();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -44,18 +45,18 @@ namespace bankaotomasyon
             }
             else
             {
+                
+                SqlCommand komut = new SqlCommand("insert into Kullanici (ad,soyad,telefon,tc,sifre,bakiye) values (@p1,@p2,@p3,@p4,@p5,@p6)", bgl.baglanti());
 
-                baglanti.Open();
-                SqlCommand kayit_ekle = new SqlCommand("insert into Kullanici (ad,soyad,telefon,tc,sifre) values (@p1,@p2,@p3,@p4,@p5)", baglanti);
+                komut.Parameters.AddWithValue("@p1", textBox1.Text);
+                komut.Parameters.AddWithValue("@p2", textBox2.Text);
+                komut.Parameters.AddWithValue("@p3", maskedTextBox1.Text);
+                komut.Parameters.AddWithValue("@p4", maskedTextBox2.Text);
+                komut.Parameters.AddWithValue("@p5", maskedTextBox3.Text);
+                komut.Parameters.AddWithValue("@p6", 0);
 
-                kayit_ekle.Parameters.AddWithValue("@p1", textBox1.Text);
-                kayit_ekle.Parameters.AddWithValue("@p2", textBox2.Text);
-                kayit_ekle.Parameters.AddWithValue("@p3", maskedTextBox1.Text);
-                kayit_ekle.Parameters.AddWithValue("@p4", maskedTextBox2.Text);
-                kayit_ekle.Parameters.AddWithValue("@p5", maskedTextBox3.Text);
-
-                kayit_ekle.ExecuteNonQuery();
-                baglanti.Close();
+                komut.ExecuteNonQuery();
+                bgl.baglanti().Close();
 
 
                 MessageBox.Show("-Kayıt Başarılı-");
@@ -68,7 +69,14 @@ namespace bankaotomasyon
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
+            textBox1.Text = textBox1.Text.ToUpper();
+            textBox1.SelectionStart = textBox1.Text.Length;
+        }
 
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            textBox2.Text = textBox2.Text.ToUpper();
+            textBox2.SelectionStart = textBox2.Text.Length;
         }
     }
 }

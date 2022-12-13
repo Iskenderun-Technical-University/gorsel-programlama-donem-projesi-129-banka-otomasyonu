@@ -39,6 +39,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.labeltc = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,6 +173,17 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // labeltc
+            // 
+            this.labeltc.AutoSize = true;
+            this.labeltc.BackColor = System.Drawing.Color.Transparent;
+            this.labeltc.Location = new System.Drawing.Point(697, 9);
+            this.labeltc.Name = "labeltc";
+            this.labeltc.Size = new System.Drawing.Size(44, 16);
+            this.labeltc.TabIndex = 19;
+            this.labeltc.Text = "label6";
+            this.labeltc.Visible = false;
+            // 
             // hesapdetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -179,6 +191,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(753, 457);
+            this.Controls.Add(this.labeltc);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -212,5 +225,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label labeltc;
     }
 }

@@ -32,6 +32,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,6 +94,26 @@
             this.groupBox1.Text = "Üye Ol";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(165, 125);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(168, 38);
+            this.textBox2.TabIndex = 36;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.Silver;
+            this.label1.Location = new System.Drawing.Point(31, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 36);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Soyad:";
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(166, 65);
@@ -106,7 +126,7 @@
             // 
             this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.maskedTextBox3.Location = new System.Drawing.Point(165, 311);
-            this.maskedTextBox3.Mask = "000000";
+            this.maskedTextBox3.Mask = "00000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(169, 30);
             this.maskedTextBox3.TabIndex = 33;
@@ -189,25 +209,6 @@
             this.label2.Size = new System.Drawing.Size(64, 36);
             this.label2.TabIndex = 23;
             this.label2.Text = "Ad:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(31, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 36);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "Soyad:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(165, 125);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 38);
-            this.textBox2.TabIndex = 36;
             // 
             // uyeol
             // 
