@@ -37,7 +37,7 @@ namespace bankaotomasyon
         private void button5_Click(object sender, EventArgs e)
         {
 
-            if(numericUpDown1.Value > 0)
+            if(numericUpDown1.Value > 0 && numericUpDown1.Value <= Convert.ToInt32(label5.Text))
             {
                 SqlCommand komut = new SqlCommand("UPDATE bankauyeler SET bakiye=@p1 WHERE tc=@p2", bgl.baglanti());
 
@@ -53,7 +53,7 @@ namespace bankaotomasyon
             }
             else
             {
-                MessageBox.Show("Lütfen 0'dan büyük değer giriniz!!!");
+                MessageBox.Show("Lütfen girdiğiniz tutarı kontrol ediniz!!!");
             }
         }
         public string tc;

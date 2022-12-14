@@ -20,14 +20,22 @@ namespace bankaotomasyon
 
         private void button5_Click(object sender, EventArgs e)
         {
-            paratransfer2 fr = new paratransfer2();
-            fr.tc = label5.Text;
-            fr.tc2 = label7.Text;
-            fr.alıcı = maskedTextBox1.Text;
-            
+            if(maskedTextBox1.Text == string.Empty)
+            {
+                MessageBox.Show("Lütfen Formu Eksiksiz Doldurunuz!!!");
+            }
+            else
+            {
+                paratransfer2 fr = new paratransfer2();
+                fr.tc = label5.Text;
+                fr.tc2 = label7.Text;
+                fr.alıcı = maskedTextBox1.Text;
 
-            fr.Show();
-            Close();
+
+                fr.Show();
+                Close();
+            }
+            
             
         }
 
