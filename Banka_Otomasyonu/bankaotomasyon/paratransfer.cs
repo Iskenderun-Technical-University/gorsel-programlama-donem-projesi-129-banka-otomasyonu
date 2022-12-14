@@ -22,6 +22,7 @@ namespace bankaotomasyon
         {
             paratransfer2 fr = new paratransfer2();
             fr.tc = label5.Text;
+            fr.tc2 = label7.Text;
             fr.alıcı = maskedTextBox1.Text;
             
 
@@ -31,10 +32,13 @@ namespace bankaotomasyon
         }
 
         public string tc;
+        public string tc2;
 
         private void paratransfer_Load(object sender, EventArgs e)
         {
             label5.Text = tc;
+            label7.Text = tc2;
+            
         }
     }
 }

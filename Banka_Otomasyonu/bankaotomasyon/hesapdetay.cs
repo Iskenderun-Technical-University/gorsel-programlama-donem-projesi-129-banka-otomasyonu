@@ -19,11 +19,12 @@ namespace bankaotomasyon
         {
             InitializeComponent();
         }
-
+          
         private void button1_Click(object sender, EventArgs e)
         {
             paracek frm=new paracek();
             frm.tc = label5.Text;
+            frm.tc2 = labeltc.Text;
             frm.Show();
             
         }
@@ -33,6 +34,7 @@ namespace bankaotomasyon
         {
             parayatır frm = new parayatır();
             frm.tc=label5.Text;
+            frm.tc2=labeltc.Text;
 
             
            
@@ -53,7 +55,7 @@ namespace bankaotomasyon
             while (dr.Read())
             {
                 label1.Text = dr[0] + " " + dr[1];
-                label5.Text = dr[2] + " " + "TL";
+                label5.Text = dr[2] + "";
             }
             bgl.baglanti().Close();
         }
@@ -62,6 +64,7 @@ namespace bankaotomasyon
         {
             paratransfer frm=new paratransfer(); 
             frm.tc = label5.Text;
+            frm.tc2=labeltc.Text;
             frm.Show();
         }
 
@@ -69,6 +72,21 @@ namespace bankaotomasyon
         {
             dovizkur frm=new dovizkur();
             frm.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            labeltc.Text = tc;
+
+            SqlCommand komut = new SqlCommand("select ad, soyad, bakiye from bankauyeler where tc = @p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", labeltc.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                label1.Text = dr[0] + " " + dr[1];
+                label5.Text = dr[2] + "";
+            }
+            bgl.baglanti().Close();
         }
     }
 }

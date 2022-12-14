@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hesapdetay));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.labeltc = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,12 +179,18 @@
             // 
             this.labeltc.AutoSize = true;
             this.labeltc.BackColor = System.Drawing.Color.Transparent;
-            this.labeltc.Location = new System.Drawing.Point(697, 9);
+            this.labeltc.Location = new System.Drawing.Point(697, 27);
             this.labeltc.Name = "labeltc";
             this.labeltc.Size = new System.Drawing.Size(44, 16);
             this.labeltc.TabIndex = 19;
             this.labeltc.Text = "label6";
             this.labeltc.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 25;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // hesapdetay
             // 
@@ -226,5 +234,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label labeltc;
+        private System.Windows.Forms.Timer timer1;
     }
 }
