@@ -95,7 +95,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(108, 150);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(498, 78);
+            this.label1.Size = new System.Drawing.Size(480, 76);
             this.label1.TabIndex = 21;
             this.label1.Text = "Para Yatıracağınız Hesaba Ait\r\n           ";
             // 
@@ -107,7 +107,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(135, 238);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 39);
+            this.label6.Size = new System.Drawing.Size(120, 38);
             this.label6.TabIndex = 27;
             this.label6.Text = "Tc No:";
             // 
@@ -155,6 +155,7 @@
             this.MaximizeBox = false;
             this.Name = "paratransfer";
             this.Text = "Para Transfer";
+            this.Load += new System.EventHandler(this.paratransfer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

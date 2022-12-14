@@ -38,6 +38,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +65,7 @@
             this.label6.ForeColor = System.Drawing.Color.Silver;
             this.label6.Location = new System.Drawing.Point(164, 221);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 39);
+            this.label6.Size = new System.Drawing.Size(108, 38);
             this.label6.TabIndex = 35;
             this.label6.Text = "Tutar:";
             // 
@@ -123,7 +125,7 @@
             this.label1.ForeColor = System.Drawing.Color.Silver;
             this.label1.Location = new System.Drawing.Point(92, 135);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 78);
+            this.label1.Size = new System.Drawing.Size(299, 76);
             this.label1.TabIndex = 30;
             this.label1.Text = "Gönderilecek Kişi:\r\n           ";
             // 
@@ -135,7 +137,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(418, 136);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(194, 39);
+            this.label7.Size = new System.Drawing.Size(190, 38);
             this.label7.TabIndex = 38;
             this.label7.Text = "Yusuf Uçar";
             // 
@@ -154,6 +156,28 @@
             this.numericUpDown1.TabIndex = 39;
             this.numericUpDown1.ThousandsSeparator = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(697, 6);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 16);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "label8";
+            this.label8.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Location = new System.Drawing.Point(695, 72);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "label9";
+            this.label9.Visible = false;
+            // 
             // paratransfer2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -161,6 +185,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(753, 457);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button5);
@@ -174,6 +200,7 @@
             this.MaximizeBox = false;
             this.Name = "paratransfer2";
             this.Text = "Para Transfer";
+            this.Load += new System.EventHandler(this.paratransfer2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -191,5 +218,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
