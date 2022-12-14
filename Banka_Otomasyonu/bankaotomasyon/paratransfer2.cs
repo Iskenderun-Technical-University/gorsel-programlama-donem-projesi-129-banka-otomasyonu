@@ -38,15 +38,18 @@ namespace bankaotomasyon
             if (numericUpDown1.Value > 0)
             {
 
-                
+
                 SqlCommand komut = new SqlCommand("UPDATE bankauyeler SET bakiye=@p1 WHERE tc=@p2", bgl.baglanti());
+                SqlCommand komut2 = new SqlCommand("UPDATE bankauyeler SET bakiye=@p3 WHERE tc=@p4", bgl.baglanti());
 
-                komut.Parameters.AddWithValue("@p2", label6.Text);
-                komut.Parameters.AddWithValue("@p1", numericUpDown1.Value + Convert.ToInt32(label5.Text));
+                komut.Parameters.AddWithValue("@p2", label8.Text);
+                komut2.Parameters.AddWithValue("@p4", label10.Text);
+                komut.Parameters.AddWithValue("@p1", numericUpDown1.Value + Convert.ToInt32(label9.Text));
+                komut2.Parameters.AddWithValue("@p3", Convert.ToInt32(label5.Text) - numericUpDown1.Value);
 
-                
 
                 komut.ExecuteNonQuery();
+                komut2.ExecuteNonQuery();
                 bgl.baglanti().Close();
 
                 MessageBox.Show("İşlem Başarılı !!!\nGönderilen Tutar: " + numericUpDown1.Value + " TL");
