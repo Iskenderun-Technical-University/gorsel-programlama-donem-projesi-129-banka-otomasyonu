@@ -165,24 +165,29 @@
             this.label8.Size = new System.Drawing.Size(44, 16);
             this.label8.TabIndex = 40;
             this.label8.Text = "label8";
+            this.label8.Visible = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Location = new System.Drawing.Point(399, 298);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 16);
             this.label9.TabIndex = 41;
             this.label9.Text = "label9";
+            this.label9.Visible = false;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Location = new System.Drawing.Point(56, 314);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(51, 16);
             this.label10.TabIndex = 42;
             this.label10.Text = "label10";
+            this.label10.Visible = false;
             // 
             // paratransfer2
             // 

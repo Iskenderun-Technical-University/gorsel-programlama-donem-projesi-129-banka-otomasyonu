@@ -140,11 +140,13 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(67, 354);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 16);
             this.label7.TabIndex = 30;
             this.label7.Text = "label7";
+            this.label7.Visible = false;
             // 
             // paratransfer
             // 

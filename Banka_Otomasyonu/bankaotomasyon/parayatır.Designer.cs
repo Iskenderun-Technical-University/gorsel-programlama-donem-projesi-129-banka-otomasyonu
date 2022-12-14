@@ -177,11 +177,13 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(58, 96);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 16);
             this.label6.TabIndex = 27;
             this.label6.Text = "label6";
+            this.label6.Visible = false;
             // 
             // parayatır
             // 
