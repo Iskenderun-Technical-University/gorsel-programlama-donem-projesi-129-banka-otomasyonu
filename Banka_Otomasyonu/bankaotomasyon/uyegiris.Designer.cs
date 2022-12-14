@@ -186,6 +186,7 @@
             this.MaximizeBox = false;
             this.Name = "uyegiris";
             this.Text = "İSTE BANK Giriş";
+            this.Load += new System.EventHandler(this.uyegiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

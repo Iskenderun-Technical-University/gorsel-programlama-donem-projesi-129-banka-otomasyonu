@@ -46,7 +46,7 @@ namespace bankaotomasyon
             else
             {
                 
-                SqlCommand komut = new SqlCommand("insert into Kullanici (ad,soyad,telefon,tc,sifre,bakiye) values (@p1,@p2,@p3,@p4,@p5,@p6)", bgl.baglanti());
+                SqlCommand komut = new SqlCommand("insert into bankauyeler (ad,soyad,telefon,tc,sifre,bakiye) values (@p1,@p2,@p3,@p4,@p5,@p6)", bgl.baglanti());
 
                 komut.Parameters.AddWithValue("@p1", textBox1.Text);
                 komut.Parameters.AddWithValue("@p2", textBox2.Text);

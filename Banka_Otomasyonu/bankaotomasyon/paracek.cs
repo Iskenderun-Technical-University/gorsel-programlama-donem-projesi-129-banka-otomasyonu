@@ -47,9 +47,10 @@ namespace bankaotomasyon
                 MessageBox.Show("Lütfen 0'dan büyük değer giriniz!!!");
             }
         }
-
+        public string tc;
         private void paracek_Load(object sender, EventArgs e)
         {
+            label5.Text= tc;
             numericUpDown1.Focus();
         }
     }

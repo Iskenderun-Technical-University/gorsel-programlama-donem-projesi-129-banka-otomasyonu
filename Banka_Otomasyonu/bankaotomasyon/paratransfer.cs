@@ -21,7 +21,9 @@ namespace bankaotomasyon
         private void button5_Click(object sender, EventArgs e)
         {
             paratransfer2 fr = new paratransfer2();
-            fr.tc = maskedTextBox1.Text;
+            fr.tc = label5.Text;
+            fr.alıcı = maskedTextBox1.Text;
+            
 
             fr.Show();
             Close();

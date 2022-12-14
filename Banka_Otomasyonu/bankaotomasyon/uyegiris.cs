@@ -27,7 +27,7 @@ namespace bankaotomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("select * from kullanici where tc = @p1 and sifre = @p2",bgl.baglanti());
+            SqlCommand komut = new SqlCommand("select * from bankauyeler where tc = @p1 and sifre = @p2",bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", maskedTextBoxtc.Text);
             komut.Parameters.AddWithValue("@p2", maskedTextBox1.Text);
             SqlDataReader dr = komut.ExecuteReader();
@@ -49,6 +49,11 @@ namespace bankaotomasyon
         {
             sifremiunuttum frm = new sifremiunuttum();
             frm.Show();
+        }
+
+        private void uyegiris_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

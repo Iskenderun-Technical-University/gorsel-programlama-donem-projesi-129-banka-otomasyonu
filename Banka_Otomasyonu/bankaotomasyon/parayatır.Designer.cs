@@ -193,6 +193,7 @@
             this.MaximizeBox = false;
             this.Name = "parayatır";
             this.Text = "Para Yatır";
+            this.Load += new System.EventHandler(this.parayatır_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

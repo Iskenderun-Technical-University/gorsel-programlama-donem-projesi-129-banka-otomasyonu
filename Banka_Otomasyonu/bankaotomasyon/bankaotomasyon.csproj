@@ -51,6 +51,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BankaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="dovizkur.cs">
       <SubType>Form</SubType>
     </Compile>

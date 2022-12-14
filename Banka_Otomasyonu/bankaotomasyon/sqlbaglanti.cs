@@ -11,7 +11,7 @@ namespace bankaotomasyon
     {
         public SqlConnection baglanti()
         {
-            SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-QE6J6UN\\SQLEXPRESS;Initial Catalog=Banka;Integrated Security=True");
+            SqlConnection baglan = new SqlConnection("Data Source=LAPTOP-FMJQ9I6Q\\SQLEXPRESS;Initial Catalog=banka_proje;Integrated Security=True");
 
             baglan.Open();
             return baglan;

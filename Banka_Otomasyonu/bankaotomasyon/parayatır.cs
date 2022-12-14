@@ -46,5 +46,10 @@ namespace bankaotomasyon
         {
             numericUpDown1.Value = 200;
         }
+        public string tc;
+        private void parayatır_Load(object sender, EventArgs e)
+        {
+            label5.Text= tc;
+        }
     }
 }

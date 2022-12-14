@@ -12,6 +12,7 @@ using System.Xml;
 
 namespace bankaotomasyon
 {
+   
     public partial class hesapdetay : Form
     {
         public hesapdetay()
@@ -22,24 +23,31 @@ namespace bankaotomasyon
         private void button1_Click(object sender, EventArgs e)
         {
             paracek frm=new paracek();
+            frm.tc = label5.Text;
             frm.Show();
             
         }
-
+        public string bakiye;
+        
         private void button2_Click(object sender, EventArgs e)
         {
             parayatır frm = new parayatır();
+            frm.tc=label5.Text;
+
+            
+           
+            
             frm.Show();
         }
 
         sqlbaglanti bgl = new sqlbaglanti();
-        public string tc;
 
+        public string tc;
         private void hesapdetay_Load(object sender, EventArgs e)
         {
             labeltc.Text = tc;
 
-            SqlCommand komut = new SqlCommand("select ad, soyad, bakiye from kullanici where tc = @p1",bgl.baglanti());
+            SqlCommand komut = new SqlCommand("select ad, soyad, bakiye from bankauyeler where tc = @p1",bgl.baglanti());
             komut.Parameters.AddWithValue("@p1",labeltc.Text);
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())

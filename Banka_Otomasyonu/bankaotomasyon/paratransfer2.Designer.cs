@@ -137,9 +137,8 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
             this.label7.Location = new System.Drawing.Point(418, 136);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(190, 38);
+            this.label7.Size = new System.Drawing.Size(0, 38);
             this.label7.TabIndex = 38;
-            this.label7.Text = "Yusuf Uçar";
             // 
             // numericUpDown1
             // 
@@ -160,23 +159,20 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(697, 6);
+            this.label8.Location = new System.Drawing.Point(278, 298);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 16);
             this.label8.TabIndex = 40;
             this.label8.Text = "label8";
-            this.label8.Visible = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(695, 72);
+            this.label9.Location = new System.Drawing.Point(399, 298);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 16);
             this.label9.TabIndex = 41;
             this.label9.Text = "label9";
-            this.label9.Visible = false;
             // 
             // paratransfer2
             // 

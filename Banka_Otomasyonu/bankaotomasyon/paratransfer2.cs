@@ -39,10 +39,12 @@ namespace bankaotomasyon
             {
 
                 
-                SqlCommand komut = new SqlCommand("UPDATE Kullanici SET bakiye=@p1 WHERE tc=@p2", bgl.baglanti());
-                komut.Parameters.AddWithValue("@p1", numericUpDown1.Value + Convert.ToInt32(label9.Text));
-                komut.Parameters.AddWithValue("@p1", numericUpDown1.Value - Convert.ToInt32(label5.Text));
+                SqlCommand komut = new SqlCommand("UPDATE bankauyeler SET bakiye=@p1 WHERE tc=@p2", bgl.baglanti());
+
                 komut.Parameters.AddWithValue("@p2", label8.Text);
+                komut.Parameters.AddWithValue("@p1", numericUpDown1.Value + Convert.ToInt32(label9.Text));
+                
+
                 komut.ExecuteNonQuery();
                 bgl.baglanti().Close();
 
@@ -57,12 +59,14 @@ namespace bankaotomasyon
         }
 
         public string tc;
+        public string alıcı;
 
         private void paratransfer2_Load(object sender, EventArgs e)
         {
-            label8.Text = tc;
+            label5.Text = tc;
+            label8.Text = alıcı;
 
-            SqlCommand komut = new SqlCommand("select ad, soyad, bakiye from kullanici where tc = @p1", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("select ad, soyad, bakiye from bankauyeler where tc = @p1", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", label8.Text);
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
