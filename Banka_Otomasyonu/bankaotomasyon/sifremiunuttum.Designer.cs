@@ -74,7 +74,7 @@
             // 
             this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.maskedTextBox2.Location = new System.Drawing.Point(277, 256);
-            this.maskedTextBox2.Mask = "000000";
+            this.maskedTextBox2.Mask = "00000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(312, 56);
             this.maskedTextBox2.TabIndex = 3;
