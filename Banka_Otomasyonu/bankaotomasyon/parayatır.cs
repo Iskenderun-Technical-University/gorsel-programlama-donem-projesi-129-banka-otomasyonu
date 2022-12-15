@@ -23,15 +23,15 @@ namespace bankaotomasyon
         {
             if (numericUpDown1.Value > 0)
             {
-                SqlCommand komut = new SqlCommand("UPDATE bankauyeler SET bakiye=@p1 WHERE tc=@p2", bgl.baglanti());
+                SqlCommand komut = new SqlCommand("UPDATE bankauyeler SET bakiye=@p1 WHERE tc=@p2", bgl.baglanti()); //Verilerin güncellenmesi
 
                 komut.Parameters.AddWithValue("@p2", label6.Text);
-                komut.Parameters.AddWithValue("@p1", numericUpDown1.Value + Convert.ToInt32(label5.Text));
+                komut.Parameters.AddWithValue("@p1", numericUpDown1.Value + Convert.ToInt32(label5.Text));      //Yatırılan tutarın bakiyeye eklenmesi
                 
                 komut.ExecuteNonQuery();
                 bgl.baglanti().Close();
 
-                MessageBox.Show("İşlem Başarılı !!!\nYatırılan Tutar: " + numericUpDown1.Value + " TL");
+                MessageBox.Show("İşlem Başarılı !!!\nYatırılan Tutar: " + numericUpDown1.Value + " TL");       //Yatırılan tutarın kullanıcıya bildirilmesi
                 this.Close();
             }
             else
@@ -40,9 +40,10 @@ namespace bankaotomasyon
             }
         }
 
+           // Butondaki değerlerin numericupdowna aktarılması
         private void button3_Click(object sender, EventArgs e)
         {
-            numericUpDown1.Value = 50;
+            numericUpDown1.Value = 50;        
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,9 +55,10 @@ namespace bankaotomasyon
         {
             numericUpDown1.Value = 200;
         }
+
         public string tc;
         public string tc2;
-        private void parayatır_Load(object sender, EventArgs e)
+        private void parayatır_Load(object sender, EventArgs e)   //gerekli bilgilerin sonraki forma çekilmesi
         {
             label5.Text= tc;
             label6.Text = tc2;

@@ -9,7 +9,7 @@ namespace bankaotomasyon
 {
     internal class sqlbaglanti
     {
-        public SqlConnection baglanti()
+        public SqlConnection baglanti()  //sql bağlantısı bağlandı
         {
             SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-QE6J6UN\\SQLEXPRESS;Initial Catalog=Banka;Integrated Security=True");
 

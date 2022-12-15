@@ -27,27 +27,27 @@ namespace bankaotomasyon
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("select * from bankauyeler where tc = @p1 and sifre = @p2",bgl.baglanti());
-            komut.Parameters.AddWithValue("@p1", maskedTextBoxtc.Text);
+            SqlCommand komut = new SqlCommand("select * from bankauyeler where tc = @p1 and sifre = @p2",bgl.baglanti());    //Şifre ve Tc yi gerekli yerlerden alma
+            komut.Parameters.AddWithValue("@p1", maskedTextBoxtc.Text);   
             komut.Parameters.AddWithValue("@p2", maskedTextBox1.Text);
             SqlDataReader dr = komut.ExecuteReader();
-            if (dr.Read())
+            if (dr.Read())          
             {
                 hesapdetay frm = new hesapdetay();
                 frm.tc = maskedTextBoxtc.Text;
-                frm.Show();
+                frm.Show();                                     //Şifre Ve Tc veri tabanıyla karşılaştırıldı 
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Hatalı TC veya Şifre!!!");
+                MessageBox.Show("Hatalı TC veya Şifre!!!");          //Şifre ve Tc yanlışsa
             }
             bgl.baglanti().Close();
         }
 
         private void buttonsifreunuttum_Click(object sender, EventArgs e)
         {
-            sifremiunuttum frm = new sifremiunuttum();
+            sifremiunuttum frm = new sifremiunuttum();   //Şifremi unuttum formuna yönlendirme
             frm.Show();
         }
 

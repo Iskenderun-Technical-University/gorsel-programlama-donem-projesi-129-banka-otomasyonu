@@ -121,6 +121,7 @@
             this.MaximizeBox = false;
             this.Name = "giris";
             this.Text = "Giriş";
+            this.Load += new System.EventHandler(this.giris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

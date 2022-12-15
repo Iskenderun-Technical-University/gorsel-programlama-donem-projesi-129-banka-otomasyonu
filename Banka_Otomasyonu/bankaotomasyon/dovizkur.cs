@@ -23,9 +23,9 @@ namespace bankaotomasyon
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)  //timer ile verilerin düzenli güncellenmesi
         {
-            string TCMB_Kur = "https://www.tcmb.gov.tr/kurlar/today.xml";
+            string TCMB_Kur = "https://www.tcmb.gov.tr/kurlar/today.xml";   //Kur bilgilerinin tcmb ssitesinden çekilmesi
             var TCMB_xml = new XmlDocument();
             string USD_alıs;
             string USD_satıs;
